@@ -7,6 +7,19 @@
     <title>Sprint 2</title>
 </head>
 
+<style>
+    fieldset {
+        display: block;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding-top: 0.35em;
+        padding-bottom: 0.625em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        border: 2px groove (internal value);
+    }   
+</style>
+
 <body>
 
     <h2>Sprint 2</h2>
@@ -15,20 +28,18 @@
         <fieldset>
             <legend>IMC:</legend>
             <label for="fname">Nombre completo:</label><br>
-            <input type="text" id="fname" name="fname" value="John Doe"><br>
+            <input type="text" id="fname" name="fname" placeholder="John Doe" required><br>
             <label for="cc">Cédula:</label><br>
-            <input type="text" id="cc" name="cc" value="1112223334"><br>
+            <input type="text" id="cc" name="cc" placeholder="1112223334" required><br>
             <label for="peso">Peso:</label><br>
-            <input type="text" id="peso" name="peso" value="kg"><br>
+            <input type="text" id="peso" name="peso" placeholder="kg" required><br>
             <label for="talla">Talla:</label><br>
-            <input type="text" id="talla" name="talla" value="m"><br><br>       
-            <input type="submit" value="Submit">
+            <input type="text" id="talla" name="talla" placeholder="m" required><br><br>       
+            <input type="submit" placeholder="Submit">
+            <input type="reset">
         </fieldset>
     </form>
-
-    <p>Note that the form itself is not visible.</p>
-
-    <p>Also note that the default width of text input fields is 20 characters.</p>
+    
 
 </body>
 </html>
