@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint 2</title>
+</head>
+
+<style>
+    fieldset {
+        display: block;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding-top: 0.35em;
+        padding-bottom: 0.625em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+        border: 2px groove (internal value);
+    }   
+</style>
+
+<body>
+
+    <h2>Sprint 2</h2>
+
+    <form action="/action_page.php" target="_blank">
+        <fieldset>
+            <legend>IMC:</legend>
+            <label for="fname">Nombre completo:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="John Doe" required><br>
+            <label for="cc">Cédula:</label><br>
+            <input type="text" id="cc" name="cc" placeholder="1112223334" required><br>
+            <label for="peso">Peso:</label><br>
+            <input type="text" id="peso" name="peso" placeholder="kg" required><br>
+            <label for="talla">Talla:</label><br>
+            <input type="text" id="talla" name="talla" placeholder="m" required><br><br>       
+            <input type="submit" placeholder="Submit">
+            <input type="reset">
+        </fieldset>
+    </form>
+    
+
+</body>
+</html>
