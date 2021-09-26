@@ -29,32 +29,41 @@
     <h2>Sprint 3</h2>
 
     <div class="container">
-        div class="row">
+        <div class="row">
            <form action="/action_page.php" target="_blank">
         <fieldset>
             <legend>IMC:</legend>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre Completo: </label>
-                <input type="text" class="form-control" id="formNombre" placeholder="Ejemplo: John Doe">
-              </div>
-            <label for="cc">Cédula:</label><br>
-            <input type="text" id="cc" name="cc" placeholder="1112223334" required><br>
-            <label for="peso">Peso:</label><br>
-            <input type="text" id="peso" name="peso" placeholder="kg" required><br>
-            <lablel for="correo">Correo:</lablel>
+            <label for="nombre">Nombre Completo: </label><br>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre(s)" aria-label="Nombre(s)">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+                </div>
+            </div>
+                <label for="cedula" class="form-label">Cédula: </label>
+                <input type="text" class="form-control" id="cedula" placeholder="Ejemplo: 112234542">
+            </div>
+            <lablel for="correo">Correo: </lablel><br>
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Ingrese su correo de Google" aria-label="Ingrese su correo de Google" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2">@gmail.com</span>
             </div>
-            <label for="talla">Talla:</label><br>
-            <input type="text" id="talla" name="talla" placeholder="m" required><br>
+            <div class="mb-3">
+                <label for="Peso" class="form-label">Peso: </label>
+                <input type="text" class="form-control" id="Peso" placeholder="Kg">
+            </div>
+            <div class="mb-3">
+                <label for="talla" class="form-label">Talla: </label>
+                <input type="text" class="form-control" id="formTalla" placeholder="Cm">
+            </div>
             <input type="radio" name="radiobutton" value="myValue1"/> Masculino<br>
             <input type="radio" name="radiobutton" value="myValue2" checked="checked" /> Femenino <br>
-            <input type="radio" name="radiobutton" value="myValue2" checked="checked" /> LGTB
+            <input type="radio" name="radiobutton" value="myValue2"/> LGTB
             <br><input type="radio" name="radiobutton" value="myValue3"/> Otro</br><br>
             <input class="btn btn-primary" type="submit" placeholder="Submit">
             <input class="btn btn-danger" type="reset">
-
 
         </fieldset>
     </form>
