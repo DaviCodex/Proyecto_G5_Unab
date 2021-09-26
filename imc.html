@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Colores.css"/>
     <title>Sprint 3</title>
 
     <style>
@@ -24,19 +25,23 @@
 </head>
 
 <body>
-
+    <div class="container"></div>
     <h2>Sprint 3</h2>
 
-    <form action="/action_page.php" target="_blank">
+    <div class="container">
+        div class="row">
+           <form action="/action_page.php" target="_blank">
         <fieldset>
             <legend>IMC:</legend>
-            <label for="fname">Nombre completo:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="John Doe" required><br>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre Completo: </label>
+                <input type="text" class="form-control" id="formNombre" placeholder="Ejemplo: John Doe">
+              </div>
             <label for="cc">Cédula:</label><br>
             <input type="text" id="cc" name="cc" placeholder="1112223334" required><br>
             <label for="peso">Peso:</label><br>
             <input type="text" id="peso" name="peso" placeholder="kg" required><br>
-            <lablel for="correo">Correo:</lablel><br>
+            <lablel for="correo">Correo:</lablel>
             <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="Ingrese su correo de Google" aria-label="Ingrese su correo de Google" aria-describedby="basic-addon2">
                 <span class="input-group-text" id="basic-addon2">@gmail.com</span>
@@ -47,10 +52,13 @@
             <input type="radio" name="radiobutton" value="myValue2" checked="checked" /> Femenino <br>
             <input type="radio" name="radiobutton" value="myValue2" checked="checked" /> LGTB
             <br><input type="radio" name="radiobutton" value="myValue3"/> Otro</br><br>
-            <input type="submit" placeholder="Submit">
-            <input type="reset">
+            <input class="btn btn-primary" type="submit" placeholder="Submit">
+            <input class="btn btn-danger" type="reset">
+
 
         </fieldset>
     </form>
+        </div>
+    </div>
 </body>
 </html>
